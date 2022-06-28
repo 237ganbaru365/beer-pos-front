@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .FlexCenter {
+    @apply flex items-center justify-center;
+  }
+  .FlexAlignCenter {
+    @apply flex items-center;
+  }
+  .FlexJustifyCenter {
+    @apply flex justify-center;
+  }
+  .FlexJustifyBetween {
+    @apply flex justify-between;
+  }
+}

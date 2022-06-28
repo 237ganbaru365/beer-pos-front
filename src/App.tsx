@@ -1,8 +1,13 @@
 import React from "react";
-import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import AdminSignup from "./views/pages/admin/AdminSignup";
 
 function App() {
-  return <div className="App">This is Beer POS!</div>;
+  return (
+    <Routes>
+      <Route path="/admin/signup" element={<AdminSignup />} />
+    </Routes>
+  );
 }
 
 export default App;
