@@ -8,11 +8,11 @@ type Props = {
   submitHandler: (e: React.SyntheticEvent) => void;
 };
 
-const SignupForm = (props: Props) => {
+const LoginForm = (props: Props) => {
   const { submitHandler, changeHandler } = props;
   return (
     <section>
-      <h1>Signup</h1>
+      <h1>Login</h1>
       <form onSubmit={submitHandler}>
         <Input
           changeHandler={changeHandler}
@@ -22,20 +22,14 @@ const SignupForm = (props: Props) => {
         />
         <Input
           changeHandler={changeHandler}
-          labelName="email"
-          type="email"
-          name="email"
-        />
-        <Input
-          changeHandler={changeHandler}
           labelName="password"
           type="password"
           name="password"
         />
-        <Button buttonStyle="bg-gray-300">Register</Button>
+        <Button buttonStyle="bg-gray-300">Login</Button>
       </form>
     </section>
   );
 };
 
-export default SignupForm;
+export default LoginForm;
