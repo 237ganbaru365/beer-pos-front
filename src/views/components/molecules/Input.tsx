@@ -1,14 +1,15 @@
-type InputProps = {
+type Props = {
   labelName: string;
   type: string;
   name: string;
-  wrapperStyle: string;
-  labelStyle: string;
-  inputStyle: string;
+  wrapperStyle?: string;
+  labelStyle?: string;
+  inputStyle?: string;
   changeHandler: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-const Input = (props: InputProps) => {
+// FIXME: change name LabeledInput
+const Input = (props: Props) => {
   const {
     labelName,
     type,
